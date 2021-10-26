@@ -36,7 +36,9 @@ function App() {
     setAlert("");
     setQuery(e.target.value);
   }
-
+const onBlur=e=>{
+  setAlert("");
+}
   const onSubmit = e => {
     e.preventDefault();
     getData();
